@@ -49,7 +49,7 @@
         var texture = new THREE.Texture();
         var loader = new THREE.ImageLoader(manager);
         loader.crossOrigin = 'anonymous';
-        var model_png = 'https://raw.githubusercontent.com/onoie/lib/master/obj/femalefemale_croupier_2013-03-26.png'
+        var model_png = 'https://raw.githubusercontent.com/onoie/lib/master/obj/female/female_croupier_2013-03-26.png';
         loader.load(model_png, function (image) {
             texture.image = image;
             texture.needsUpdate = true;
@@ -59,7 +59,7 @@
 
         loader = new THREE.OBJLoader(manager);
         loader.crossOrigin = 'anonymous';
-        var model_obj = 'https://raw.githubusercontent.com/onoie/lib/master/obj/female/female_croupier_2013-03-26.obj'
+        var model_obj = 'https://raw.githubusercontent.com/onoie/lib/master/obj/female/female_croupier_2013-03-26.obj';
         loader.load(model_obj, function (event) {
             var object = event;
             object.traverse(function (child) {
